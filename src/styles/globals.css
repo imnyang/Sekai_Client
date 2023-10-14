@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 수정된 Chart 컴포넌트 스타일 */
+.chart {
+    display: inline-block; /* 이 부분이 추가됨 */
+    margin: 0 auto; /* 수평 가운데 정렬을 위한 스타일 추가 */
+    width: 250px;
+    height: 250px;
+}
+
+.no-drag {
+    user-select: none;
+    /* 다음 두 줄은 모든 브라우저에서 드래그 및 선택 방지를 위해 추가로 필요한 속성입니다. */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.title {
+    border-top-right-radius: 25px;
+}
+
+.title:hover {
+    background-color: #161616; /* 마우스 호버 시 배경색을 변경합니다. */
+}
